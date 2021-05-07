@@ -1,7 +1,16 @@
-.navbar{
-  background-color: black;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.home{
+
+.navbar{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage{
   background-color: black;
 }
