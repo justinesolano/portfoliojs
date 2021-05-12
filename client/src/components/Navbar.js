@@ -1,26 +1,71 @@
-import React from 'react'
-import { Nav, NavDropdown } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
+import geometry from '../assets/geometry.png'
 // import ScrollIntoView from 'react-scroll-into-view'
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window
+  return {
+    width,
+    height,
+  }
+}
+
+
 const Navbar = () => {
+
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
+
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  console.log('WINDOW DIMENSION', windowDimensions)
+
+
+
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <>
+      { windowDimensions. width > 550 ?
+        <nav className="ui centered grid aligned fixed menu navbar">
+          <div className="ui centered grid secondary menu">
+            <div className="item" style={{ color: 'white' }}>
+      about
+            </div>
+            <div className="item" style={{ color: 'white' }}>
+      experience
+            </div>
+            <div className="item">
+              <img src={geometry} alt="home" className="geometry nav-item"></img>
+            </div>
+            <div className="item" style={{ color: 'white' }}>
+      projects
+            </div>
+            <div className="item" style={{ color: 'white' }}>
+      contact
+            </div>
+          </div>
+        </nav>
+        :
+        <div className="ui secondary vertical menu toggle">
+          <div className="ui dropdown item">
+            <i className="dropdown icon"></i>
+          Display Options
+            <div className="menu">
+              <div className="header">Text Size</div>
+              <a className="item" href="hello">Small</a>
+              <a className="item" href="hello">Medium</a>
+              <a className="item" href="hello">Large</a>
+            </div>
+          </div>
+        </div>
+      }
+    </>
   )
 }
 

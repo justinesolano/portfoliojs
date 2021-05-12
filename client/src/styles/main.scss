@@ -1,0 +1,276 @@
+@import "semantic-ui-css/semantic.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hr-div, .hr-div-three, .hr-div-four{
+  display: flex;
+  justify-content: center;
+}
+.hr, .hr-two{
+  width: 900px;
+}
+
+.ui.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  background: linear-gradient(transparent, #ffffff), url('../assets/meteor.jpg') no-repeat center; 
+  background-size: cover; 
+}
+.ui.inverted.header{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  text-shadow: 1px 1px 1px #000, 
+  3px 3px 5px rgb(255, 255, 255); 
+  position: relative;
+  animation:mymove 3s ease-out forwards;
+  animation-iteration-count: 1;
+  color: white;
+  z-index: 0;
+}
+.ui.text h2{
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #000, 
+  3px 3px 5px rgb(255, 255, 255); 
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+
+}
+.ui.inverted.header{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  color: black;
+  font-size: 70px;
+
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  40% {opacity:0;}
+  50% {opacity:0;}
+  60% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  40% {opacity:0;}
+  50% {opacity:0;}
+  60% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  40% {opacity:0;}
+  50% {opacity:0;}
+  60% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  40% {opacity:0;}
+  50% {opacity:0;}
+  60% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  40% {opacity:0;}
+  50% {opacity:0;}
+  60% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+@keyframes mymove
+{ from {top:-200px; opacity: 0;}
+to {top:10px; opacity: 1}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+from {top:0px; opacity: 0;}
+to {top:200px; opacity: 1;}
+}
+
+.ui.centered.grid.aligned.fixed.menu.navbar{
+  background-color: black;
+}
+.item{
+  font-size: 17px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.ui.divided.grid{
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+.about-title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 55px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2.5px 2.5px #000, 
+  3px 3px 5px rgb(255, 255, 255); 
+}
+.one.column.row{
+  display: flex;
+  justify-content: center;
+}
+.column{
+  display: flex;
+  justify-content: center;
+  margin: 0px 70px 0px 70px;
+}
+.about-me{
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+
+  @media only screen and (max-width: 800px) and (min-width: 320px) {
+    .column{
+      display: flex;
+      justify-content: center;
+      margin: 0px 20px 0px 20px;
+    }
+    }
+
+
+    @media only screen and (max-width: 480px) and (min-width: 320px) {
+      .ui.inverted.header{
+        font-size: 44px;
+      }
+    }
+
+
+
+
+
+
+// .ui.sizer.vertical{
+//   margin-top: 55px;
+//   background: linear-gradient(transparent, #ffffff), url('../assets/meteor.jpg') no-repeat center; 
+//   background-size: cover; 
+// }
+// .ui.huge.header{
+//   margin-top: 200px;
+//   display: flex;
+//   justify-content: center;
+//   font-family: 'Raleway', sans-serif;
+//   font-size: 100px;
+//   text-shadow: 1px 1px 1px #000, 
+//   3px 3px 5px rgb(255, 255, 255); 
+//   position: relative;
+//   animation:mymove 3s ease-out forwards;
+//   animation-iteration-count: 1;
+//   color: white;
+//   z-index: 0;
+// }
+// .ui.large.header{
+//   display: flex;
+//   justify-content: center;
+//   font-family: 'Raleway', sans-serif;
+//   text-shadow: 1px 1px 1px #000, 
+//   3px 3px 5px rgb(255, 255, 255); 
+//   // height: 150px;
+//   font-size: 40px;
+//   position: relative;
+//   color: white;
+//   z-index: 0;
+// }
+
+// @media only screen and (max-width: 800px) and (min-width: 481px) {
+  
+//   .ui.huge.header{
+//     font-size: 70px;      
+//   }
+//   .ui.large.header{
+//   font-size: 30px;
+
+//   }
+//   }
+
+//   @media only screen and (max-width: 480px) and (min-width: 320px) {
+  
+//     .ui.huge.header{
+//       font-size: 45px;      
+//     }
+//     .ui.large.header{
+//       font-size: 24px;
+    
+//       }
+//     }
