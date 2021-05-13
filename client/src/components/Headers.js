@@ -7,10 +7,23 @@ const Headers = () => {
     <div className="ui text">
       <br />
       <br />
-      <h1 className="ui inverted header" style={{ color: 'white' }}>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 className="ui inverted header">
         Justine Solano
       </h1>
       <h2 className="fade-in" style={{ color: 'white' }}>developer | writer | gamer </h2>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import geometry from '../assets/geometry.png'
-// import ScrollIntoView from 'react-scroll-into-view'
+import ScrollIntoView from 'react-scroll-into-view'
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -35,16 +35,24 @@ const Navbar = () => {
         <nav className="ui centered grid aligned fixed menu navbar">
           <div className="ui centered grid secondary menu">
             <div className="item" style={{ color: 'white' }}>
-      about
+              <ScrollIntoView selector=".hr">
+            about
+              </ScrollIntoView>
             </div>
             <div className="item" style={{ color: 'white' }}>
-      experience
+              <ScrollIntoView selector=".hr-two">
+            experience
+              </ScrollIntoView>
             </div>
             <div className="item">
-              <img src={geometry} alt="home" className="geometry nav-item"></img>
+              <ScrollIntoView selector=".top">
+                <img src={geometry} alt="home" style={{ height: '40px' }} className="geometry nav-item"></img>
+              </ScrollIntoView>
             </div>
             <div className="item" style={{ color: 'white' }}>
+              <ScrollIntoView selector=".hr-three">
       projects
+              </ScrollIntoView>
             </div>
             <div className="item" style={{ color: 'white' }}>
       contact

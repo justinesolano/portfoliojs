@@ -11,8 +11,8 @@
   display: flex;
   justify-content: center;
 }
-.hr, .hr-two{
-  width: 900px;
+.hr, .hr-two, .hr-three {
+  width: 1000px;
 }
 
 .ui.text{
@@ -36,23 +36,145 @@
   animation-iteration-count: 1;
   color: white;
   z-index: 0;
+  font-weight: lighter;
 }
 .ui.text h2{
   display: flex;
   justify-content: center;
   text-shadow: 1px 1px 1px #000, 
-  3px 3px 5px rgb(255, 255, 255); 
+  5px 5px 5px rgb(255, 255, 255); 
   font-family: 'Raleway', sans-serif;
-  font-size: 27px;
+  font-size: 40px;
 
 }
-.ui.inverted.header{
+
+
+// EXPERIENCE
+.ui.stackable.four.column.centered.grid{
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  color: black;
-  font-size: 70px;
+  margin-top: 50px;
+}
+.experience{
+  font-family: 'Raleway', sans-serif;
+}
+.sei{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.four.column.centered.row{
+  display: flex;
+  justify-content: center;
+}
+.spire-logo{
+  display: flex;
+  justify-content: center;
+}
 
+.sei-details{
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  font-size: 17px;
+}
+.sei-description{
+  width: 450px;
+  text-align: justify;
+  margin-top: -10px;
+  font-size: 16px;
+}
+.exp-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.exp-logo-liv{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+.column.desc{
+  margin: 50px;
+  margin-top: 50px;
+}
+.column-desc{
+  margin: 50px;
+}
+
+.experience-me{
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2.5px 2.5px #000, 
+  3px 3px 5px rgb(255, 255, 255); 
+}
+
+.ga-logo, .liv-logo {
+  margin-bottom: 20px;
+  height: 65px;
+}
+.spire-logo{
+  height: 75px;
+}
+
+.exp-column{
+  margin: 100px;
+  margin-top: 20px;
+}
+
+
+// PROJECTS
+.project-title{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  // margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2.5px 2.5px #000, 
+  3px 3px 5px rgb(255, 255, 255); 
+}
+.nine.wide.column{
+  display: flex;
+  justify-content: center;
+}
+.project-four-title, .project-three-title, .project-two-title, .project-one-title{
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+}
+.project-details-four{
+  margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
+}
+.project-four-description{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+}
+.project-links{
+  font-size: 17px;
+}
+.readme, .deploy{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.project-hr{
+  margin: 60px 0 60px 0;
+}
+.ui.stackable.grid.container{
+  display: flex;
+  justify-content: center;
+}
+.project-logo{
+  display: flex;
+  justify-content: center;
 }
 
 .fade-in {
@@ -180,7 +302,7 @@ to {top:200px; opacity: 1;}
 }
 .about-title{
   font-family: 'Raleway', sans-serif;
-  font-size: 55px;
+  font-size: 70px;
   color: rgb(0, 0, 0);
   text-shadow: 2px 2.5px 2.5px #000, 
   3px 3px 5px rgb(255, 255, 255); 
@@ -192,12 +314,84 @@ to {top:200px; opacity: 1;}
 .column{
   display: flex;
   justify-content: center;
-  margin: 0px 70px 0px 70px;
+  margin: 0px 200px 0px 200px;
 }
 .about-me{
   font-size: 16px;
   text-align: justify;
 }
+.icons{
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 15px 20px;
+}
+.column.icon{
+  // margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  display: flex;
+  // justify-content: center;
+}
+.icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.development, .management{
+  font-size: 30px;
+}
+#management-column{
+  margin-top: 40px;
+}
+.icon{
+  margin: 25px;
+
+}
+
+.card{
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+}
+
+.two.column.row{
+  margin: 0px;
+}
+.column.design{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.names{
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1301px) {
+  .column{
+    margin: 0px 140px 0px 140px;
+  }
+  }
+
+@media only screen and (max-width: 1300px) and (min-width: 801px) {
+  .column{
+    margin: 0px 60px 0px 60px;
+  }
+  }
 
 
 
@@ -206,6 +400,9 @@ to {top:200px; opacity: 1;}
       display: flex;
       justify-content: center;
       margin: 0px 20px 0px 20px;
+    }
+    .ui.inverted.header{
+      font-size: 70px;
     }
     }
 
