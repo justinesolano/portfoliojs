@@ -55,7 +55,9 @@ const Navbar = () => {
               </ScrollIntoView>
             </div>
             <div className="item" style={{ color: 'white' }}>
+              <ScrollIntoView selector=".contact-title">
       contact
+              </ScrollIntoView>
             </div>
           </div>
         </nav>

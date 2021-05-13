@@ -3,6 +3,8 @@ import Headers from './Headers'
 import About from './About'
 import Experience from './Experience'
 import Projects from './Projects'
+import Contact from './Contact'
+
 
 
 
@@ -52,6 +54,7 @@ const Home = () => {
         <br />
         <br />
         <br />
+        <br />
         <div className="projects">
           <Projects className="exp"/>
         </div>
@@ -59,6 +62,9 @@ const Home = () => {
         <br />
         <br />
         <br />
+        <footer className="footer">
+          <Contact />
+        </footer>
       </div>
     </>
   )
