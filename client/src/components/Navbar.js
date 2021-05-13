@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import geometry from '../assets/geometry.png'
 import ScrollIntoView from 'react-scroll-into-view'
+import Sidebar from './Sidebar'
+
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -31,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      { windowDimensions. width > 550 ?
+      { windowDimensions. width > 850 ?
         <nav className="ui centered grid aligned fixed menu navbar">
           <div className="ui centered grid secondary menu">
             <div className="item" style={{ color: 'white' }}>
@@ -62,16 +64,9 @@ const Navbar = () => {
           </div>
         </nav>
         :
-        <div className="ui secondary vertical menu toggle">
-          <div className="ui dropdown item">
-            <i className="dropdown icon"></i>
-          Display Options
-            <div className="menu">
-              <div className="header">Text Size</div>
-              <a className="item" href="hello">Small</a>
-              <a className="item" href="hello">Medium</a>
-              <a className="item" href="hello">Large</a>
-            </div>
+        <div id="App">
+          <Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+          <div id="page-wrap">
           </div>
         </div>
       }

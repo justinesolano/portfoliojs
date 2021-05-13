@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "hamburgers": "^1.1.3",
     "http-proxy-middleware": "^1.0.5",
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",
